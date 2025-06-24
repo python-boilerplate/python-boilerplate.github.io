@@ -1,0 +1,119 @@
+site_name: python boilerplate
+repo_url: https://github.com/python-boilerplate
+repo_name: python-boilerplate
+
+nav:
+  - Home: index.md
+  - Templates:
+    - uv-template:
+      - Home:
+        - Overview: uv-template/index.md
+        - Changelog: uv-template/home/changelog.md
+        - License: uv-template/home/license.md
+        - Contributing: uv-template/home/contributing.md
+      - Usage:
+        - Options: uv-template/usage/index.md
+        - Commands: uv-template/usage/commands.md
+      - Features:
+        - Overview: uv-template/features/index.md
+        - Python:
+          - Python 3.10+: uv-template/features/python.md
+        - UV: uv-template/features/uv.md
+        - Docker: uv-template/features/docker.md
+        - CI/CD:
+          - GitHub Actions: uv-template/features/ci/github_actions.md
+          - GitLab CI: uv-template/features/ci/gitlab_ci.md
+        - Dev Containers: uv-template/features/devcontainers.md
+        - Code Quality:
+          - Ruff: uv-template/features/code_quality/ruff.md
+          - MyPy: uv-template/features/code_quality/mypy.md
+          - Pytest: uv-template/features/code_quality/pytest.md
+          - Vermin: uv-template/features/code_quality/vermin.md
+        - Pre-commit Hooks: uv-template/features/pre-commit.md
+        - Commitizen: uv-template/features/commitizen.md
+        - Environment Management: uv-template/features/environment.md
+        - MkDocs: uv-template/features/mkdocs.md
+        - Makefile: uv-template/features/makefile.md
+      - Reference:
+        - Project Structure: uv-template/reference/project_structure.md
+    - poetry-template: 
+      - Home:
+        - Overview: poetry-template/index.md
+        - Changelog: poetry-template/home/changelog.md
+        - License: poetry-template/home/license.md
+        - Contributing: poetry-template/home/contributing.md
+      - Usage:
+        - Options: poetry-template/usage/index.md
+        - Commands: poetry-template/usage/commands.md
+      - Features:
+        - Overview: poetry-template/features/index.md
+        - Python:
+          - Python 3.10+: poetry-template/features/python.md
+        - UV: poetry-template/features/uv.md
+        - Docker: poetry-template/features/docker.md
+        - CI/CD:
+          - GitHub Actions: poetry-template/features/ci/github_actions.md
+          - GitLab CI: poetry-template/features/ci/gitlab_ci.md
+        - Dev Containers: poetry-template/features/devcontainers.md
+        - Code Quality:
+          - Ruff: poetry-template/features/code_quality/ruff.md
+          - MyPy: poetry-template/features/code_quality/mypy.md
+          - Pytest: poetry-template/features/code_quality/pytest.md
+          - Vermin: poetry-template/features/code_quality/vermin.md
+        - Pre-commit Hooks: poetry-template/features/pre-commit.md
+        - Commitizen: poetry-template/features/commitizen.md
+        - Environment Management: poetry-template/features/environment.md
+        - MkDocs: poetry-template/features/mkdocs.md
+        - Makefile: poetry-template/features/makefile.md
+      - Reference:
+        - Project Structure: poetry-template/reference/project_structure.md
+
+
+theme:
+  name: material
+  features:
+    - navigation.footer
+    - navigation.tabs
+    - content.code.copy
+    - content.code.select
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.tracking
+    - toc.follow
+
+  palette:
+  - media: "(prefers-color-scheme)"
+    toggle:
+      icon: material/brightness-auto
+      name: Switch to light mode
+  - media: "(prefers-color-scheme: light)"
+    scheme: default
+    primary: teal
+    accent: purple
+    toggle:
+      icon: material/weather-sunny
+      name: Switch to dark mode
+  - media: "(prefers-color-scheme: dark)"
+    scheme: slate
+    primary: black
+    accent: lime
+    toggle:
+      icon: material/weather-night
+      name: Switch to system preference
+
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
