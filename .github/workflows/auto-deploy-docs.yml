@@ -7,6 +7,10 @@ on:
   push:
     branches:
       - main
+    paths:
+      - 'docs/**'
+      - 'mkdocs.yml'
+      - '.github/workflows/auto-deploy-docs.yml'
 
 jobs:
   deploy-docs:
