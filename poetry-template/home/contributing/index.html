@@ -71,6 +71,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#contributing-guide" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -1513,6 +1518,21 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Contributing
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -1525,6 +1545,61 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#reporting-a-bug" class="md-nav__link">
+    <span class="md-ellipsis">
+      🐞 Reporting a Bug
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-contribute-pull-request" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔄 How to Contribute (Pull Request)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#code-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Code Requirements
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#questions" class="md-nav__link">
+    <span class="md-ellipsis">
+      ❓ Questions
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -2314,6 +2389,52 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#reporting-a-bug" class="md-nav__link">
+    <span class="md-ellipsis">
+      🐞 Reporting a Bug
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-contribute-pull-request" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔄 How to Contribute (Pull Request)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#code-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Code Requirements
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#questions" class="md-nav__link">
+    <span class="md-ellipsis">
+      ❓ Questions
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -2332,9 +2453,64 @@
   
 
 
-  <h1>Contributing</h1>
-
-<p>123</p>
+<h1 id="contributing-guide">Contributing Guide</h1>
+<p>Welcome!
+Thank you for your interest in improving <strong>python-boilerplate/poetry-template</strong>. This project is my personal template, and <strong>only bug fixes are accepted</strong>.</p>
+<hr />
+<h2 id="reporting-a-bug">🐞 Reporting a Bug</h2>
+<p>Before submitting a bug report:</p>
+<ul>
+<li><strong>Check</strong> that the issue hasn’t already been reported in the <a href="https://github.com/python-boilerplate/poetry-template/issues">Issues</a> section.</li>
+</ul>
+<p>When reporting a bug, please include:</p>
+<ul>
+<li><strong>Steps to reproduce</strong> the bug</li>
+<li><strong>Expected</strong> vs <strong>actual</strong> behavior</li>
+<li>Any <strong>logs, error traces, or screenshots</strong> (if applicable)</li>
+<li>Details about your <strong>Python version</strong>, <strong>OS</strong>, and any relevant environment info</li>
+</ul>
+<blockquote>
+<p>Clear, detailed bug reports or feature descriptions help address problems faster.</p>
+</blockquote>
+<hr />
+<h2 id="how-to-contribute-pull-request">🔄 How to Contribute (Pull Request)</h2>
+<ol>
+<li><strong>Fork</strong> this repository to your own GitHub account.</li>
+<li><strong>Create a branch</strong> for your fix.<br />
+<em>Branch naming suggestion:</em> <code>fix/short-bug-description</code></li>
+<li><strong>Apply your changes</strong> on that branch (<strong><em>if it's a bug</em></strong>).</li>
+<li><strong>Test your code</strong>:<ul>
+<li>Run the test suite:<br />
+  <div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>make<span class="w"> </span><span class="nb">test</span>
+</span></code></pre></div></li>
+<li>Run the linter:<br />
+  <div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>make<span class="w"> </span>lint<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>make<span class="w"> </span>format
+</span></code></pre></div></li>
+</ul>
+</li>
+<li><strong>Describe your PR</strong> clearly and informatively.</li>
+<li><strong>Open a Pull Request</strong> from your branch to this repository.</li>
+</ol>
+<hr />
+<h2 id="code-requirements">✅ Code Requirements</h2>
+<div class="admonition success">
+<p class="admonition-title">!</p>
+<ul>
+<li><strong>Follow the existing code style.</strong></li>
+<li><strong>Make sure all tests pass</strong> (<code>pytest</code>) (if needed).</li>
+<li><strong>Lint and Format your code</strong> with <code>ruff</code> before submitting (if needed).</li>
+<li><strong>Do not</strong> add new features or change existing functionality without agreement.</li>
+</ul>
+</div>
+<hr />
+<h2 id="questions">❓ Questions</h2>
+<div class="admonition question">
+<p class="admonition-title">!</p>
+<p>If you have questions about contributing,<br />
+please <a href="https://github.com/python-boilerplate/poetry-template/issues/new">open an issue</a> or comment on an existing one.</p>
+</div>
+<hr />
+<p>Thank you for helping make this template better!</p>
 
 
 
